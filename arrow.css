@@ -1,0 +1,137 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+body p{
+    margin: 0;
+    padding: 0;
+}
+
+#arrow-container{
+    width: 100%;
+    height:100px;
+    font-size: 0;
+}
+
+#arrow-container .arrow-item{
+    width: 95px;
+    height:25px;
+    font-size:0;
+    display: inline-block;
+    color:#666;
+    line-height: 23px;
+    position: relative;
+    /*padding-left: 12.5px;*/
+}
+.arrow-content{
+    position: absolute;
+    left: 0;
+    width: 82.5px;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.arrow{
+    position: absolute;
+    height: 23px;
+    width: 12.5px;
+    top:1px;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.arrow-right{
+    right: 12.5px;
+}
+.arrow-left{
+
+    background-color: #fff;
+}
+
+.arrow-right:before{
+    border: 12.5px solid transparent;
+    content: " ";
+    position: absolute;
+    top: -1px;
+    border-left-color: #e5e5e5;
+    left: 100%;
+}
+
+.arrow-right:after{
+    border: 10.5px solid transparent;
+    content: " ";
+    position: absolute;
+    top: 1px;
+    border-left-color: #fff;
+    left: 100%;
+}
+
+.arrow-left:before{
+    border: 12.5px solid transparent;
+    content: " ";
+    position: absolute;
+    top: -1px;
+    border-left-color: #e5e5e5 ;
+    left: 0;
+}
+
+.arrow-left:after{
+    border:solid transparent;
+    content: " ";
+    position: absolute;
+    /*top: 1px;*/
+    border-left-color: #fff;
+    border-width: 11.5px 10.5px;
+    left: 0;
+}
+
+.arrow-gray{
+
+}
+.arrow-gray .arrow-content{
+    background-color: #F6F6F6;
+}
+.arrow-gray .arrow{
+    background-color: #F6F6F6;
+}
+.arrow-gray .arrow-right:after{
+    border-left-color: #F6F6F6;
+}
+.active .arrow-content{
+    background-color: #108EE9;
+    color: #fff;
+    border-color: #108EE9;
+}
+.active .arrow{
+    background-color: #108EE9;
+}
+.active .arrow-right:before{
+    border-left-color: #108EE9;
+}
+.active .arrow-right:after{
+    border-left-color: #108EE9;
+}
+
+.active .arrow-left:after{
+    border: 12.5px solid transparent;
+    top:-1px;
+    border-left-color: #fff;
+}
+
+.end{
+    margin:20px auto 0;
+    width: 95px;
+    height:25px;
+    border: 1px solid #D0021B;
+    color:#D0021B;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+}
